@@ -926,10 +926,10 @@ window._brCloseDone=function(){ window._brClose(); renderHome(); toast('🌬️ 
 
 /* ===================== Trust:30-Day Devotional Life (inner page, ported from v16 relationships) ===================== */
 var DEVO=[
- {d:1,t:'Discovering the 321 Vision',v:'“Keep your heart with all diligence, for out of it flow the springs of life.”Proverbs 4:23',a:'Reflect today: where is the focus of my life — on myself or on Jesus?',r:'John 1:1-18',f:'Faithfulness'},
+ {d:1,t:'Discovering the 321 Concept',v:'“Keep your heart with all diligence, for out of it flow the springs of life.”Proverbs 4:23',a:'Reflect today: where is the focus of my life — on myself or on Jesus?',r:'John 1:1-18',f:'Faithfulness'},
  {d:2,t:'Jesus Is My Example',v:'“I have been crucified with Christ; it is no longer I who live, but Christ lives in me.”Gal.2:20',a:'Ask yourself: in one thing today, what would Jesus do? Did I follow through?',r:'Matthew 5:1-16',f:'Gentleness'},
- {d:3,t:'Scripture Is My Standard',v:'“Your word is a lamp to my feet and a light to my path.”Psalm 119:105',a:'Finish today’s reading and find one verse you can apply to your life.',r:'Psalm 119:97-112',f:'Faithfulness'},
- {d:4,t:'The Spirit Is My Guide',v:'“Walk by the Spirit, and you will not gratify the desires of the flesh.”Galatians 5:16',a:'Be still5 minutes and ask the Spirit: what will You lead me to do today?',r:'John 14:15-26',f:'Peace'},
+ {d:3,t:'Bible Is My Standard',v:'“Your word is a lamp to my feet and a light to my path.”Psalm 119:105',a:'Finish today’s reading and find one verse you can apply to your life.',r:'Psalm 119:97-112',f:'Faithfulness'},
+ {d:4,t:'Holy Spirit Is My Guide',v:'“Walk by the Spirit, and you will not gratify the desires of the flesh.”Galatians 5:16',a:'Be still5 minutes and ask the Spirit: what will You lead me to do today?',r:'John 14:15-26',f:'Peace'},
  {d:5,t:'Let Jesus reign—Diet',v:'“Whether you eat or drink, whatever you do, do it all for the glory of God.”1 Cor.10:31',a:'Pray before every meal today, thank God for the food, and let Jesus reign over your eating.',r:'Genesis 1:29-31',f:'Temperance'},
  {d:6,t:'Let Jesus reign—Body',v:'“Do you not know that your body is a temple of the Holy Spirit?”1 Cor.6:19',a:'Exercise at least 30 minutes, offering the exercise as thanks to God.',r:'1 Corinthians 6:12-20',f:'Temperance'},
  {d:7,t:'Weekend Review & Gratitude',v:'“Give thanks in all circumstances, for this is God’s will for you in Christ Jesus.”1 Thess.5:18',a:'Write down what God did for you this week3 things, and thank Him sincerely.',r:'Psalm 100',f:'Joy'},
@@ -951,11 +951,11 @@ var DEVO=[
  {d:23,t:'Building a God-Centered System',v:'“Seek first His kingdom and His righteousness, and all these things will be given to you.”Matt.6:33',a:'Reflect: in your home/Work/church — how can you build more of God’s order?',r:'Matthew 6:25-34',f:'Goodness'},
  {d:24,t:'Kindness Toward Others',v:'“Overcome evil with good.”Romans 12:21',a:'Show kindness today to someone who troubles you, letting Jesus reign over the relationship.',r:'Romans 12:14-21',f:'Kindness'},
  {d:25,t:'The Power of Words',v:'“A person finds joy in giving an apt reply — how good is a timely word!”Proverbs 15:23',a:'Before speaking today, ask: does this build up or wound? Let Jesus reign over your words.',r:'Proverbs 15:1-4',f:'Gentleness'},
- {d:26,t:'Whole-Person Health',v:'“May the God of peace sanctify you through and through; may your whole spirit, soul, and body be kept blameless.”1 Thess.5:23',a:'Log all three dimensions of body, mind, and spirit today:NEW START check-in+Mood+920 journal.',r:'1 Thessalonians 5:23-24',f:'Peace'},
+ {d:26,t:'Whole-Person Health',v:'“May the God of peace sanctify you through and through; may your whole spirit, soul, and body be kept blameless.”1 Thess.5:23',a:'Log all three dimensions of body, heart, and spirit today:NEW START check-in+Mood+920 journal.',r:'1 Thessalonians 5:23-24',f:'Peace'},
  {d:27,t:'The Assurance of Victory',v:'“Everyone born of God overcomes the world.”1 John 5:4',a:'Declare: “I am an overcomer! Because Christ is in me, I can face every challenge today!”',r:'1 John 5:1-5',f:'Faithfulness'},
  {d:28,t:'Influence & Witness',v:'“Let your light shine before others, that they may see your good deeds.”Matt.5:16',a:'Today, take this 30-day devotion’s changes with someone, and become an encouragement to them.',r:'Matthew 5:13-16',f:'Goodness'},
  {d:29,t:'Holding On to a Victorious Life',v:'“I have fought the good fight, I have finished the race, I have kept the faith.”2 Tim.4:7',a:'Reflect:30 days from now — which3 good habits? Write your commitment.',r:'2 Timothy 4:6-8',f:'Faithfulness'},
- {d:30,t:'Complete! A New Beginning',v:'“Live out Christ, become an overcomer.”321 Vision',a:'Congratulations on finishing 30 days! Thank God today for carrying you the whole way, and share your biggest takeaway!',r:'Philippians 4:13',f:'Joy'}
+ {d:30,t:'Complete! A New Beginning',v:'“Live out Christ, become an overcomer.”321 Concept',a:'Congratulations on finishing 30 days! Thank God today for carrying you the whole way, and share your biggest takeaway!',r:'Philippians 4:13',f:'Joy'}
 ];
 function _devoState(){ if(!S.devo)S.devo={done:{},notes:{},view:1}; if(!S.devo.done)S.devo.done={}; if(!S.devo.notes)S.devo.notes={}; if(!S.devo.view)S.devo.view=1; return S.devo; }
 function _devoCur(){ var st=_devoState(); for(var i=0;i<DEVO.length;i++){ if(!st.done[DEVO[i].d]) return DEVO[i].d; } return 30; }
@@ -1029,10 +1029,10 @@ function _devoDraw(){
         +'<div style=\"font-size:.95rem;line-height:1.8;margin-bottom:8px\">📌 '+o.a+'</div>'
         +'<div style=\"font-size:.92rem;background:rgba(255,255,255,0.1);border-radius:12px;padding:9px 12px\">📖 Today’s reading:'+o.r+'</div>'
         +'<div style=\"margin-top:10px;background:rgba(255,255,255,0.13);border-radius:12px;padding:12px 14px;font-size:.9rem;line-height:1.95\">'
-            +'<div style=\"font-weight:900;margin-bottom:6px\">🌱 321 Vision</div>'
-            +'<div><b>Three Foundations</b>: Jesus Is My Example  ·  Scripture Is My Standard  ·  The Spirit Is My Guide</div>'
-            +'<div style=\"margin-top:3px\"><b>Two Cores</b>: let Jesus reign  ·  Let Jesus receive all the glory</div>'
-            +'<div style=\"margin-top:3px\"><b>One Purpose</b>: build a God-centered system</div></div>'
+            +'<div style=\"font-weight:900;margin-bottom:6px\">🌱 321 Concept</div>'
+            +'<div><b>Three Foundations</b>: Jesus Is My Example  ·  Bible Is My Standard  ·  Holy Spirit Is My Guide</div>'
+            +'<div style=\"margin-top:3px\"><b>Two Cores</b>: Let Jesus Reign  ·  Let Jesus Receive All The Glory</div>'
+            +'<div style=\"margin-top:3px\"><b>One Purpose</b>: Build A Godly System</div></div>'
         +'<div style=\"font-size:.82rem;opacity:.85;margin:10px 0 4px\">✍️ My notes</div>'
         +'<textarea id=\"devo-note\" onchange=\"window._devoSaveNote()\" placeholder=\"Write today’s insight, prayer, or thanksgiving…\" style=\"width:100%;box-sizing:border-box;min-height:70px;padding:10px 12px;border-radius:10px;border:none;font-size:1rem;font-family:inherit;outline:none;resize:vertical\">'+note+'</textarea>'
         +'<div style=\"margin-top:12px\">'+doneBtn+'</div>'
@@ -1045,9 +1045,78 @@ function _devoDraw(){
     +'</div></div>';
 }
 
+/* ===================== Custom Intake / Supplements / Medication — List & Reminders ===================== */
+var INK_TYPES={food:{lbl:'Food',ic:'🍎',c:'#2e7d32'},supp:{lbl:'Supplement',ic:'🌿',c:'#00897b'},med:{lbl:'Medication',ic:'💊',c:'#c62828'}};
+function _inkItems(){ if(!S.intakeItems)S.intakeItems=[]; return S.intakeItems; }
+function _inkLog(){ var k=todayKey(); if(!S.intakeLog)S.intakeLog={}; if(!S.intakeLog[k])S.intakeLog[k]={}; return S.intakeLog[k]; }
+function _inkTimingLabel(it){ if(it.timing==='custom')return '⏰ '+(it.time||'--:--'); if(it.timing==='wake')return '🌅 On waking'; if(it.timing==='bed')return '🌙 Bedtime'; return it.timing==='before'?'🍽️ Before meal':'🍽️ After meal'; }
+function _inkSortKey(it){ if(it.timing==='wake')return '0_wake'; if(it.timing==='custom')return '1_'+(it.time||'99:99'); if(it.timing==='before')return '2_before'; if(it.timing==='after')return '3_after'; if(it.timing==='bed')return '4_bed'; return '3_after'; }
+function _inkNowHM(){ var d=new Date(); return pad(d.getHours())+':'+pad(d.getMinutes()); }
+function _inkDue(it){ if(it.timing!=='custom'||!it.time)return false; if(_inkLog()[it.id])return false; return _inkNowHM()>=it.time; }
+
+window._inkFormToggle=function(){ var f=document.getElementById('ink-form'); if(!f)return; var show=(f.style.display==='none'||!f.style.display); f.style.display=show?'block':'none'; if(show){var n=document.getElementById('ink-name'); if(n)try{n.focus();}catch(e){}} };
+window._inkTimingChange=function(){ var s=document.getElementById('ink-timing'),t=document.getElementById('ink-time'); if(s&&t)t.style.display=(s.value==='custom')?'inline-block':'none'; };
+window._inkAdd=function(){
+  var n=document.getElementById('ink-name'),ty=document.getElementById('ink-type'),tm=document.getElementById('ink-timing'),ti=document.getElementById('ink-time'),no=document.getElementById('ink-note');
+  var name=n?(n.value||'').trim():''; if(!name){ if(n)try{n.focus();}catch(e){} toast('Please enter a name first'); return; }
+  var timing=tm?tm.value:'before';
+  _inkItems().push({id:'ink'+Date.now().toString(36)+Math.floor(Math.random()*1e4),name:name,type:ty?ty.value:'food',timing:timing,time:(timing==='custom'&&ti)?ti.value:'',note:no?(no.value||'').trim():'',created:Date.now()});
+  save(); toast('✓ Added “'+name+'”'); renderFood();
+};
+window._inkToggle=function(id){ var log=_inkLog(); if(log[id])delete log[id]; else log[id]=Date.now(); save(); renderFood(); };
+window._inkDelete=function(id){ var arr=_inkItems(),it=null,i; for(i=0;i<arr.length;i++){if(arr[i].id===id){it=arr[i];break;}} if(!it)return; _confirmDialog('🗑️ Delete Item','Remove “'+it.name+'”? This item will be deleted.',function(){ S.intakeItems=_inkItems().filter(function(x){return x.id!==id;}); save(); renderFood(); }); };
+
+function renderIntakeSection(view){
+  var dk=window.__isDark();
+  var items=_inkItems().slice().sort(function(a,b){var ka=_inkSortKey(a),kb=_inkSortKey(b);return ka<kb?-1:(ka>kb?1:a.created-b.created);});
+  var log=_inkLog(); var done=0; items.forEach(function(it){if(log[it.id])done++;});
+  view.appendChild(el('h2','title','🔔 My Custom List (Food · Supplements · Medication)'));
+  view.appendChild(el('div','lead','Set the foods, supplements, and medications you take each day—with before-meal, after-meal, or timed reminders—and check them off daily.'+(items.length?'　 Done today: '+done+' / '+items.length:'')));
+
+  var ctrl=el('div'); ctrl.style.cssText='margin:.2rem 2px .4rem';
+  ctrl.innerHTML='<button onclick="window._inkFormToggle()" style="width:100%;padding:12px;border-radius:12px;border:1.5px dashed var(--brand);background:transparent;color:var(--brand-d);font-weight:800;font-size:1rem;cursor:pointer">+ Add Item</button>';
+  view.appendChild(ctrl);
+
+  var inpBg=dk?'rgba(255,255,255,0.06)':'#f8fdf8',inpCol=dk?'#e8f5e9':'#1b1b1b',bd=dk?'rgba(255,255,255,0.16)':'rgba(0,0,0,0.12)';
+  var ist='padding:10px;border-radius:10px;border:1px solid '+bd+';font-size:1rem;background:'+inpBg+';color:'+inpCol+';font-family:inherit';
+  var form=el('div','card'); form.id='ink-form'; form.style.display='none';
+  form.innerHTML=
+    '<input id="ink-name" placeholder="Name (e.g. Vitamin C, blood-pressure medication, carrot)" style="width:100%;box-sizing:border-box;'+ist+';margin-bottom:10px">'
+    +'<div style="display:flex;gap:10px;align-items:center;margin-bottom:10px"><label style="font-size:.92rem;color:var(--muted);min-width:38px">Type</label>'
+      +'<select id="ink-type" style="flex:1;'+ist+'"><option value="food">🍎 Food</option><option value="supp">🌿 Supplement</option><option value="med">💊 Medication</option></select></div>'
+    +'<div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px"><label style="font-size:.92rem;color:var(--muted);min-width:38px">Timing</label>'
+      +'<select id="ink-timing" onchange="window._inkTimingChange()" style="flex:1;min-width:130px;'+ist+'"><option value="wake">🌅 On waking</option><option value="before">🍽️ Before meal</option><option value="after">🍽️ After meal</option><option value="bed">🌙 Bedtime</option><option value="custom">⏰ Custom time</option></select>'
+      +'<input type="time" id="ink-time" value="08:00" style="display:none;'+ist+'"></div>'
+    +'<input id="ink-note" placeholder="Dose / Notes (optional, e.g. 1 tablet, 30 min after meal)" style="width:100%;box-sizing:border-box;'+ist+';margin-bottom:12px">'
+    +'<div style="display:flex;gap:10px"><button onclick="window._inkAdd()" style="flex:1;padding:12px;border-radius:12px;border:none;background:var(--brand);color:#fff;font-weight:800;font-size:1rem;cursor:pointer">Add</button>'
+      +'<button onclick="window._inkFormToggle()" style="padding:12px 18px;border-radius:12px;border:1px solid '+bd+';background:transparent;color:var(--muted);font-size:1rem;cursor:pointer">Cancel</button></div>';
+  view.appendChild(form);
+
+  if(!items.length){
+    var empty=el('div','card'); empty.style.cssText='text-align:center;color:var(--muted);font-size:.9rem';
+    empty.innerHTML='No items yet. Tap “+ Add Item” above to add the foods, supplements, or medications you take each day 🌱';
+    view.appendChild(empty);
+  } else {
+    items.forEach(function(it){
+      var tm=INK_TYPES[it.type]||INK_TYPES.food, on=!!log[it.id], due=_inkDue(it);
+      var row=el('div','card');
+      row.style.cssText='display:flex;align-items:center;gap:.7rem;padding:.8rem .9rem;margin:.5rem 0;border:2px solid '+(on?'var(--brand)':(due?'#c62828':'var(--border)'))+';'+(on?('background:'+(dk?'rgba(76,175,80,0.12)':'#f1f8f2')):'');
+      var dueBadge=due?'<span style="margin-left:6px;font-size:.72rem;font-weight:800;color:#fff;background:#c62828;border-radius:8px;padding:1px 7px">Due now</span>':'';
+      var note=it.note?'<div style="font-size:.8rem;color:var(--muted);margin-top:2px">'+esc(it.note)+'</div>':'';
+      row.innerHTML='<div style="font-size:26px;line-height:1;flex:0 0 auto">'+tm.ic+'</div>'
+        +'<div style="flex:1;min-width:0"><div style="font-size:1.05rem;font-weight:800;color:'+(dk?'#e8f5e9':'#1b1b1b')+'">'+esc(it.name)+dueBadge+'</div>'
+        +'<div style="font-size:.82rem;color:'+tm.c+';font-weight:700;margin-top:1px">'+tm.lbl+'　'+_inkTimingLabel(it)+'</div>'+note+'</div>'
+        +'<button onclick="window._inkDelete(\''+it.id+'\')" aria-label="Delete" style="flex:0 0 auto;background:transparent;border:none;color:var(--muted);font-size:1.1rem;cursor:pointer;padding:4px 6px">🗑</button>'
+        +'<div onclick="window._inkToggle(\''+it.id+'\')" role="button" aria-label="Mark done" style="flex:0 0 auto;width:38px;height:38px;border-radius:50%;border:2px solid '+(on?'var(--brand)':'var(--track)')+';background:'+(on?'var(--brand)':'transparent')+';display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.2rem;font-weight:800;cursor:pointer">'+(on?'✓':'')+'</div>';
+      view.appendChild(row);
+    });
+  }
+}
+
 function renderFood(){
   var view=document.getElementById('view'); view.innerHTML='';
   document.getElementById('secLabel').textContent='\ud83c\udf08 Rainbow Eating';
+  renderIntakeSection(view);
   var rk=todayKey(); var eaten=S.rainbow[rk]||[];
   var sk=weekKey(); var sw=S.superWeek[sk];
   if(!sw||Array.isArray(sw)){sw={c:{},f:{}};}
@@ -1463,7 +1532,7 @@ function renderStats(){
   var now=new Date(), days=[], wd=['day','1','2','3','4','5','6'], tk=dayKeyOf(now);
   for(var i=6;i>=0;i--){var d=new Date(now);d.setDate(now.getDate()-i);days.push({d:d,pct:dayPct(S.days[dayKeyOf(d)])});}
   var avg=Math.round(days.reduce(function(a,x){return a+x.pct;},0)/7);
-  view.appendChild(el('h2','title','This week’s body, mind & spirit'));
+  view.appendChild(el('h2','title','This week’s body, heart & spirit'));
   var c1=el('div','card'); var bars='<div class="sbars">';
   days.forEach(function(x){var tn=dayKeyOf(x.d)===tk;
     bars+='<div class="sbar"><div class="sbar-v">'+x.pct+'</div><div class="sbar-track"><div class="sbar-fill" style="height:'+Math.max(3,x.pct)+'%'+(tn?';background:var(--brand)':'')+'"></div></div><div class="sbar-lb'+(tn?' on':'')+'">'+wd[x.d.getDay()]+'</div></div>';});
@@ -1497,7 +1566,7 @@ function _calDraw(){
   var view=document.getElementById('view'); view.innerHTML='';
   document.getElementById('secLabel').textContent='📅 Health Calendar CALENDAR';
   var y=_calY, mo=_calMo, now=new Date(), tk=dayKeyOf(now);
-  view.appendChild(el('div','lead','Darker colors mean a higher body-mind-spirit score that day; tap any day for details.'));
+  view.appendChild(el('div','lead','Darker colors mean a higher body-heart-spirit score that day; tap any day for details.'));
 
   /* Days with a measurement (weight / blood pressure) logged → show a small dot */
   var measured={};
@@ -1593,7 +1662,7 @@ function _clearToday(){ var k=todayKey();
 }
 function _clearAll(){
   S.days={};S.rainbow={};S.rainbowFoods={};S.superWeek={};S.mood={};S.measure={w:[],bp:[]};S.fast={cur:null,log:[],goal:16};
-  S.bedThanks={};S.bedMood={};S.bedPray={};S.temp={log:{}};S.devo={done:{},notes:{},view:1};
+  S.bedThanks={};S.bedMood={};S.bedPray={};S.temp={log:{}};S.devo={done:{},notes:{},view:1};S.intakeLog={};
   save(); toast('All records cleared'); renderSet();
 }
 function _showShareText(title,text){
@@ -1793,7 +1862,7 @@ function renderSet(){
   var ab=el('div','card');
   ab.innerHTML='<h2 class="title" style="margin-top:0">About</h2>'+
     '<div class="lead">NEW START 321 Healthy New Life ‧ Whole-person health growth platform<br>'+
-    '321 Vision: Jesus is the example, Scripture is the standard, the Spirit is the guide; let Jesus reign and be glorified; build a God-centered system.</div>'+
+    '321 Concept: Jesus is the example, the Bible is the standard, the Holy Spirit is the guide; let Jesus reign and be glorified; build a godly system.</div>'+
     '<div class="verse" style="margin-top:0">“Beloved, I pray that you may prosper in all things and be in health, just as your soul prospers.”(3 John 1:2)</div>';
   view.appendChild(ab);
 }
@@ -2204,7 +2273,7 @@ function renderStrTab(){
 
   /* ── Recognizing stress symptoms ── */
   html += '<div class="emo-card2"><div class="emo-sec" style="color:#D84315;">🔎 Recognizing stress symptoms</div>';
-  html += '<div style="font-size:16px;color:#546e7a;margin-bottom:10px;">Body and mind are both speaking——Recognize these signals:</div>';
+  html += '<div style="font-size:16px;color:#546e7a;margin-bottom:10px;">Body and heart are both speaking——Recognize these signals:</div>';
   html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">';
   [{ic:'😤',s:'Irritable and on edge'},{ic:'💭',s:'Racing thoughts'},{ic:'😴',s:'Poor sleep quality'},{ic:'🤢',s:'Upset stomach'},
    {ic:'🫀',s:'Racing heartbeat'},{ic:'🧊',s:'Tense muscles'},{ic:'😶',s:'Scattered attention'},{ic:'😔',s:'No energy'}].forEach(function(sy){
@@ -2231,7 +2300,7 @@ function renderStrTab(){
     {k:'prayer', ic:'🙏', t:'Prayer of entrusting', sub:'Give the burden to God',    c:'#7B1FA2', bg:'rgba(123,31,162,0.08)'},
     {k:'verse',  ic:'📖', t:'Read God’s word', sub:'Food for the soul',    c:'#1976D2', bg:'rgba(25,118,210,0.08)'},
     {k:'praise', ic:'🎵', t:'Praise & worship', sub:'Joy is strength',    c:'#FF8F00', bg:'rgba(255,143,0,0.08)'},
-    {k:'walk',   ic:'🚶', t:'Prayer walk', sub:'Body, mind, and spirit as one',  c:'#FF6B35', bg:'rgba(255,107,53,0.08)'},
+    {k:'walk',   ic:'🚶', t:'Prayer walk', sub:'Body, heart, and spirit as one',  c:'#FF6B35', bg:'rgba(255,107,53,0.08)'},
     {k:'journal',ic:'✍️', t:'Gratitude journal', sub:'Practicing a change of perspective',c:'#E91E63', bg:'rgba(233,30,99,0.08)'},
   ];
   html += '<div class="emo-card2"><div class="emo-sec" style="color:#1565C0;">🧰 Step 3  ·  Stress-relief toolkit</div>';
@@ -2259,9 +2328,9 @@ function renderStrTab(){
     html += '</div>';
   }
 
-  /* ── 321 Vision: the spiritual meaning of stress ── */
+  /* ── 321 Concept: the spiritual meaning of stress ── */
   html += '<div class="emo-card2" style="background:linear-gradient(135deg,#e8f5e9,#e3f2fd);border-color:rgba(46,125,50,0.2);">';
-  html += '<div class="emo-sec" style="color:#1b5e20;">✦ 321 Vision  ·  Stress & trust</div>';
+  html += '<div class="emo-sec" style="color:#1b5e20;">✦ 321 Concept  ·  Stress & trust</div>';
   html += '<div style="display:flex;flex-direction:column;gap:8px;">';
   [['🧠','Using the head, relying on self','→ anxiety, suppression, more distress','#EF5350'],
    ['❤️','Using the heart, relying on the Spirit','→ Bring stress before God and find peace','#4CAF50'],
@@ -2360,7 +2429,7 @@ function renderWalk(){
       +'<div><div style="font-size:15px;font-weight:800;color:#FF6B35;">'+s.t+'</div>'
       +'<div style="font-size:16px;color:#546e7a;line-height:1.6;margin-top:3px;">'+s.d+'</div></div></div>';
   });
-  html += '<button onclick="window._or(null)" style="margin-top:6px;width:100%;padding:10px;border-radius:12px;background:linear-gradient(135deg,#FF6B35,#FF8F00);border:none;color:#fff;font-size:15px;font-weight:900;cursor:pointer;">🚶 Prayer walk complete! Body, mind, and spirit renewed</button>';
+  html += '<button onclick="window._or(null)" style="margin-top:6px;width:100%;padding:10px;border-radius:12px;background:linear-gradient(135deg,#FF6B35,#FF8F00);border:none;color:#fff;font-size:15px;font-weight:900;cursor:pointer;">🚶 Prayer walk complete! Body, heart, and spirit renewed</button>';
   html += '</div>';
   return html;
 }
