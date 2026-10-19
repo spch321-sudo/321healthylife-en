@@ -1,6 +1,6 @@
 /* NEW START 321 Healthy New Life - Service Worker */
 /* 每次改版請把 CACHE 版本號 +1（例如 v1 -> v2），iOS 才會抓到新版 */
-var CACHE = 'newstart321-v2';
+var CACHE = 'newstart321-v3';
 
 /* 要快取的 app 殼層檔案（與 index.html 同一層） */
 var ASSETS = [
